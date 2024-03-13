@@ -165,13 +165,18 @@
     background-attachment: fixed;
 }
 .who nav .who-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 .who nav .who-icon div{
     width: 350px;
     height: 220px;
-    margin: 40px 0px 0px 30px;
     border-top: 3px solid #ffcd00;
     text-align: center;
     background-color: #1E2126;
@@ -240,10 +245,11 @@
 
 /* our projects starts here */
 .project{
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .project .pro-text{
     padding-top: 70px;
+    margin-left: 20px;
 }
 .project .pro-text span{
     width: 180px;
@@ -266,17 +272,21 @@
 .project .pro{
     list-style-type: none;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.project .pro .option{
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px 30px;
+    gap: 5px 25px;
+    margin-left: 20px;
 }
 .project .pro .pro-img{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
 }
 .project .pro .pro-img div{
     height: 300px;
